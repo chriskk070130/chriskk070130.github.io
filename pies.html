@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Οι Πίτες του Πίτου-Πίτες</title>
+</head>
+
+<body>
+  <header>
+    <h2>Οι Πίτες του Πίτου</h2>
+    <p>Πάρε μου μία πίτα</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="/storage.html">Καταστημα</a>
+      </li>
+      <li>
+        <a href="/pies.html">Πιτες</a>
+      </li>
+      <li>
+        <a href="/contact.html">Επικοινωνια</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <article>
+      <h1>Οι Πίτες μας!</h1>
+      <table>
+        <tr>
+          <td><img src="images/spanakopita.jpg"></td>
+          <td>Σπανακοπιτα</td>
+          <td>4&euro;</td>
+        </tr>
+        <tr>
+          <td><img src="images/manitaropita.jpg"></td>
+          <td>Μανιταροπιτα</td>
+          <td>5.5&euro;</td>
+        </tr>
+        <tr>
+          <td><img src="images/prasopita.jpg"></td>
+          <td>Πρασοπιτα</td>
+          <td>3.5&euro;</td>
+        </tr>
+        <tr>
+          <td><img src="images/boureki.jpg"></td>
+          <td>Μπουρεκι</td>
+          <td>4.5&euro;</td>
+        </tr>
+      </table>
+    </article>
+
+    <article>
+      <form action="/sendData" method="post">
+        <fieldset>
+          <h1>Οι πιτες μας στον χωρο σας!</h1>
+          <p>Ωραριο ληψης παραγγελιων: (18:00 - 22:00)</p>
+          <fieldset>
+            <legend>Πληροφοριες Παραδοσης</legend>
+            <label for="txtname">Ονοματεπώνυμο: </label>
+            <input type="text" name="name" id="txtname" required autocomplete="on">(*)
+            <br>
+            <label for="txtadress">Διευθυνση(Οδος - Αριθμος): </label>
+            <input type="text" name="adress" id="txtadress" required autocomplete="on">(*)
+            <br>
+            <label for="rg">Περιοχη: </label>
+            <select id="rg" name="region">
+              <option value="ampelokipi">Αμπελοκηποι</option>
+              <option value="gkizi">Γκυζη</option>
+              <option value="polygono">Πωλυγονο</option>
+            </select>
+            <br>
+            <label for="txtemail">E-mail: </label>
+            <input type="email" id="txtemail" name="email" autocomplete="on">
+            <br>
+            <label for="tel">Τηλέφωνο: </label>
+            <input type="tel" name="telephone" id="tel" required autocomplete="on">(*)
+            <br>
+            <p>Ειδικες πληροφοριες για την παραδοση: </p>
+            <textarea name="inf" rows="6" cols="40" placeholder="Εισαγετε πληροφοριες για την αμεση παραδοση σε εσας..."></textarea>
+            <br>
+            (*)Τα πεδια ειναι υποχρεωτικά
+          </fieldset>
+          <fieldset>
+            <legend>Παραγγελια</legend>
+            <ul>
+              <li>
+                <label for="nmsp">Σπανακοπιτες</label>
+                <input type="number" id="nmsp" name="numspanakopita" value="0" step="1" min="0" max="5">
+              </li>
+              <li>
+                <label for="nmmp">Μανιταροπιτες</label>
+                <input type="number" id="nmmp" name="nummanitaropita" value="0" min="0" max="5" step="1">
+              </li>
+              <li>
+                <label for="nmpp">Πρασοπιτες</label>
+                <input type="number" id="nmpp" name="numprasopita" value="0" step="1" min="0" max="5">
+              </li>
+              <li>
+                <label for="nmb">Μπουρεκια</label>
+                <input type="number" id="nmb" name="numbourekia" value="0" min="0" max="5" step="1">
+              </li>
+            </ul>
+            <input type="checkbox" name="offer" id="offer">
+            <label for="offer">Ενσωματωση προσφορας στις 10 η 1 πιτα δωρο</label>
+          </fieldset>
+          <fieldset>
+            <legend>Τροπος πληρωμης: </legend>
+            <input type="radio" id="vs" name="payment" value="VISA">
+            <label for="vs">VISA</label>
+            <input type="radio" name="payment" value="cash" id="cs">
+            <label for="cs">Μετρητα</label>
+            <input type="radio" name="payment" value="eidos" id="eidos">
+            <label for="eidos">Ειδος</label>
+          </fieldset>
+          <input type="submit" value="Αποστολή">
+          <input type="reset" value="Καθαρισμός">
+        </fieldset>
+      </form>
+    </article>
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Giveaway</p>
+    <p>Στις 10 η μία δώρο</p>
+  </aside>
+
+  <footer>
+    <p>Οι πίτες του πίτου 2022</p>
+    <a href="/index.html">Αρχικη σελιδα</a>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Οι Πίτες του Πίτου-Πίτες</title>
+</head>
+
+<body>
+  <header>
+    <h2>Οι Πίτες του Πίτου</h2>
+    <p>Πάρε μου μία πίτα</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="/storage.html">Καταστημα</a>
+      </li>
+      <li>
+        <a href="/pies.html">Πιτες</a>
+      </li>
+      <li>
+        <a href="/contact.html">Επικοινωνια</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Επικοινωνία</h2>
+      <ul>
+        <li><a href="mailto:xristoskk2@gmail.com">Στειλε μας email</a></li>
+        <li><a href="tel:+6974163651">Παρε τηλεφωνο</a></li>
+      </ul>
+      <h2>Στειλε μας μυνημα:</h2>
+      <form action="/sendData" method="post">
+        <fieldset>
+          <label for="txtname">Ονοματεπώνυμο:</label>
+          <input type="text" id="txtname" name="name" required autocomplete="on" minlength="3" maxlength="40">(*)
+          <br>
+          <label for="eml">E-mail: </label>
+          <input type="email" id="eml" name="email" required autocomplete="on" size="40">(*)
+          <br>
+          <label for="tl">Τηλέφωνο: </label>
+          <input type="tel" id="tl" name="tel">
+          <br>
+          <label for="msg">Μηνυμα: </label>
+          <textarea name="msg" id="msg" rows="6" cols="40"></textarea>(*)
+          <br>
+          (*)Τα πεδια ειναι υποχρεωτικά
+          <br>
+          <input type="submit" value="Αποστολή">
+          <input type="reset" value="Καθαρισμός">
+        </fieldset>
+      </form>
+    </article>
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Giveaway</p>
+    <p>Στις 10 η μία δώρο</p>
+  </aside>
+
+  <footer>
+    <p>Οι πίτες του πίτου 2022</p>
+    <a href="/index.html">Αρχικη σελιδα</a>
+  </footer>
+</body>
+
+</html>
